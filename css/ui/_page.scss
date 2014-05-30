@@ -72,7 +72,7 @@ header h1 {
 	font-family: 'Calligraffitti', cursive; 
 }
 
-section { margin: 0 auto; }
+section { margin: 0 auto; padding-top: 60px; padding-bottom:50px; }
 
 section.number-one {
 	background: url(../images/yellow-ipad.png) #f4f4f4  no-repeat bottom right;
@@ -87,10 +87,12 @@ section.number-one a.btn {
 }
 
 section.number-two {
-	min-height: 500px;
+	min-height: 560px;
 	background: url(../images/multi-device.png) #fff  no-repeat left bottom;
 	background-size: 400px; 
 }
+
+
 section.number-two a.btn { 
 	color: #ea4c89;
 	border-color: #ea4c89;
@@ -163,6 +165,44 @@ footer .nav li.mail a:hover {
 		//Remove size - save out image to correct size above ^^^
 		background-size: 180px; 
 		//Remove size - save out image to correct size above ^^^
+	}
+
+	.lap-wrapper {
+		width: $lap-start;
+		margin: 0 auto;
+	}
+
+	section.number-one {
+		background-size: 180px;
+	}
+
+	section.number-two {
+		background-size: 500px;
+	}
+
+}
+
+@include media-query(desk){
+	header .palm-wrapper {
+		width:$desk-start;
+		margin: 0 auto;
+		background: url(../images/red-iphone.png) no-repeat bottom left;
+		//Remove size - save out image to correct size above ^^^
+		background-size: 180px; 
+		//Remove size - save out image to correct size above ^^^
+	}
+
+	.lap-wrapper {
+		width: $desk-start;
+		margin: 0 auto;
+	}
+
+	section.number-one {
+	background-size: 200px;
+	}
+
+	section.number-two {
+	background-size: 800px;
 	}
 
 }
