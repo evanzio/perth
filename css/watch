@@ -6,7 +6,7 @@
 # No minification
 #sass --watch style.scss:style.css --style expanded
 cd ~/evanzio/perth/css
-sass --watch walls.scss:perth.min.css --style compressed
+sass --watch perth.scss:perth.min.css --style compressed
 
 
 exit 0
